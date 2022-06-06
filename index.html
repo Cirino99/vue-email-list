@@ -8,8 +8,9 @@
 </head>
 <body>
     <div id="app">
+        <h2>Lista email</h2>
         <ul>
-            <li></li>
+            <li v-for="(email,i) in listEmail" @key="i">{{email}}</li>
         </ul>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
